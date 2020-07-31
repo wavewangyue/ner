@@ -1,0 +1,46 @@
+2020-07-31 11:59:50 | loading vocab...
+2020-07-31 11:59:50 | loading data...
+2020-07-31 12:00:33 | building model...
+2020-07-31 12:00:38 | model params:
+2020-07-31 12:00:38 | 	 embedding_layer/embedding_matrix_char:0 (4295, 300) 1288500
+2020-07-31 12:00:38 | 	 embedding_layer/embedding_matrix_word:0 (89303, 300) 26790900
+2020-07-31 12:00:38 | 	 encoder/bidirectional_rnn/fw/lstm_cell/kernel:0 (900, 1200) 1080000
+2020-07-31 12:00:38 | 	 encoder/bidirectional_rnn/fw/lstm_cell/bias:0 (1200,) 1200
+2020-07-31 12:00:38 | 	 encoder/bidirectional_rnn/bw/lstm_cell/kernel:0 (900, 1200) 1080000
+2020-07-31 12:00:38 | 	 encoder/bidirectional_rnn/bw/lstm_cell/bias:0 (1200,) 1200
+2020-07-31 12:00:38 | 	 bio_projection/dense/kernel:0 (300, 5) 1500
+2020-07-31 12:00:38 | 	 bio_projection/dense/bias:0 (5,) 5
+2020-07-31 12:00:38 | 	 bio_projection/transitions:0 (5, 5) 25
+2020-07-31 12:00:38 | 	 attr_projection/dense/kernel:0 (300, 501) 150300
+2020-07-31 12:00:38 | 	 attr_projection/dense/bias:0 (501,) 501
+2020-07-31 12:00:38 | all params num: 30394131
+2020-07-31 12:00:38 | start training...
+2020-07-31 12:00:41 | ###### shape of a batch #######
+2020-07-31 12:00:41 | input_seq_char: (32, 78)
+2020-07-31 12:00:41 | input_seq_word: (32, 78)
+2020-07-31 12:00:41 | input_seq_len: (32,)
+2020-07-31 12:00:41 | output_seq_bio: (32, 78)
+2020-07-31 12:00:41 | output_seq_attr: (32, 78)
+2020-07-31 12:00:41 | ###### preview a sample #######
+2020-07-31 12:00:41 | input_seq_char:金 美 若 冬 季 短 靴 女 真 皮 保 暖 雪 地 靴 羊 毛 马 丁 靴 皮 毛 一 体 水 钻 装 饰 中 跟 休 闲 百 搭 女 靴 子 防 滑 软 底 冬 靴 女 反 季 清 仓 促 销 [SPA] 棕 色 [SPA] 3 7 [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD]
+2020-07-31 12:00:41 | input_seq_word:金美若 金美若 金美若 冬季 冬季 短靴 短靴 女真 女真 皮 保暖 保暖 雪地 雪地 靴 羊毛 羊毛 马丁 马丁 靴 皮毛 皮毛 一体 一体 水钻 水钻 装饰 装饰 中 跟 休闲 休闲 百搭女 百搭女 百搭女 靴子 靴子 防滑 防滑 软底 软底 冬靴 冬靴 女 反季 反季 清仓 清仓 促销 促销 [SPA] 棕色 棕色 [SPA] 37 37 [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD]
+2020-07-31 12:00:41 | input_seq_len :56
+2020-07-31 12:00:41 | output_seq_bio: B I E B E O O O O O O O B I E O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O B E O O O O O O O O O O O O O O O O O O O O O O
+2020-07-31 12:00:41 | output_seq_attr: 品牌 品牌 品牌 适用季节 适用季节 null null null null null null null 品类 品类 品类 null null null null null null null null null null null null null null null null null null null null null null null null null null null null null null null null null null null null null null null 尺码 尺码 null null null null null null null null null null null null null null null null null null null null null null
+2020-07-31 12:00:41 | ###############################
+2020-07-31 12:01:08 | 
+2020-07-31 12:01:08 | Epoches: 0
+2020-07-31 12:01:08 | Batches: 100
+2020-07-31 12:01:08 | Loss: 1.724768152832985
+2020-07-31 12:01:08 | Path of ckpt: ./ckpt/model.ckpt.batch100
+2020-07-31 12:01:18 | Valid Samples: 10240
+2020-07-31 12:01:18 | Valid P/R/F1: 0.43 / 0.0 / 0.01
+2020-07-31 12:01:18 | ############# best performance now here ###############
+2020-07-31 12:01:43 | 
+2020-07-31 12:01:43 | Epoches: 0
+2020-07-31 12:01:43 | Batches: 200
+2020-07-31 12:01:43 | Loss: 1.3886691451072692
+2020-07-31 12:01:43 | Path of ckpt: ./ckpt/model.ckpt.batch200
+2020-07-31 12:01:53 | Valid Samples: 10240
+2020-07-31 12:01:53 | Valid P/R/F1: 52.55 / 7.83 / 13.64
+2020-07-31 12:01:53 | ############# best performance now here ###############
