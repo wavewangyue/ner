@@ -21,4 +21,4 @@
 
 所以沿着上述思路，就在一个中文NER任务上做一些实践，写一些模型。都列在下面了，首先是 LSTM-CRF 和 BERT-CRF，然后 Cascade 开头的是几个多任务模型（因为实体类型比较多，把NER拆成两个任务，一个用来识别实体，另一个用来判断实体类型），后面的几个模型里，WLF 指的是 Word Level Feature（即在原本字级别的序列标注任务上加入词级别的表征），WOL 指的是 Weight of Loss（即在loss函数方面通过设置权重来权衡Precision与Recall，以达到提高F1的目的）
 
-![](https://pic4.zhimg.com/v2-ed3c136bc20d536df069553d701c256b_b.png)
+![](https://pic2.zhimg.com/80/v2-3062da7d38adce1213af496239f04bd9_720w.jpg)
